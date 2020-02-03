@@ -13,3 +13,11 @@
 // #####
 // ######
 // #######
+
+for(let row = 0; row <=7; row++){
+ let line = "#";
+ for(let col = 1; col <= row; col++){
+ line += "#";
+ }
+ console.log(line);
+}

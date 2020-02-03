@@ -14,5 +14,5 @@ for (let number = 0; number < 25; number ++) {
     if (number % 2) {
         console.log(number);
     }
-    console.log(number);
+    //console.log(number);
 }
