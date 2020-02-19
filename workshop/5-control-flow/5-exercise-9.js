@@ -23,24 +23,22 @@
 //   else console.log("_#_#_#_#");
 // }
 
-for (let i = 1; i <= 8; i++) {
+for (let i = 0; i < 8; i++) {
   let line = "";
-  if (i % 2 === 0) {
-    for (let k = 1; k <= 8; k++) {
-      if (k % 2 === 0) {
+  if (i % 2 == 0) {
+    line += "#";
+    for (let j = 0; j < 8; j++) {
+      if (j % 2 == 0) {
         line += "_";
-      } else {
-        line += "#";
-      }
+      } else line += "#";
     }
   } else {
-    for (j = 1; j <= 8; j++) {
-      if (j % 2 === 0) {
-        line += "#";
-      } else {
-        line += "_";
-      }
+    line += "_";
+    for (let k = 0; k < 8; k++) {
+      if (k % 2 == 0) line += "#";
+      else line += "_";
     }
   }
+
   console.log(line);
 }
